@@ -6,26 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/@vetixy/circular-std@1.0.0/dist/index.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/home/header.css">
+  <link rel="stylesheet" href="./css/index/header.css">
+  <link rel="stylesheet" href="./css/home/home.css">
   <title>Spotify
   </title>
+  <script defer src="./js/fetch.js"></script>
 </head>
 
 <body>
   <header>
     <div>
       <nav>
+      <!--- Mobile -->
         <ul class="mobile">
-          <li><a href=""><img src="./img/header/Home Icon.svg" alt="Home"></a></li>
+          <li><a onclick="loadPage('./pages/home/home.html')" href="#"><img src="./img/header/Home Icon.svg" alt="Home"></a></li>
           <li><a href=""><img src="./img/header/Search icon.svg" alt="Search"></a></li>
           <li><a href=""><img class="library" src="./img/header/Library.svg" alt="Library"></a></li>
           <!---- O Icone está como "Prenium" e não "Premium" acho que não tenho tempo para ajeitar pois estou realizando a atividade com um prazo curto, conseguindo terminar em um bom tempo, eu venho ajeitar o ícone. -->
           <li><a href=""><img src="./img/header/Spotify Pro.svg" alt="Spotify Pro"></a></li>
         </ul>
-        <a href=""><img class="logo" src="./img/header/large/logo.svg" alt=""></a>
+
+
+      <!---- >768px --> 
+        <a href="#"><img class="logo" src="./img/header/large/logo.svg" alt=""></a>
         <section class="section-links">
           <ul>
-            <li><a href=""><img class="home-large" src="/img/header/large/homeLarge.svg" alt="Home"><span>Home</span></a>
+            <li><a onclick="loadPage('./pages/home/home.html')" href="#"><img class="home-large" src="/img/header/large/homeLarge.svg"
+                  alt="Home"><span>Home</span></a>
             </li>
             <li><a href=""><img class="search-large" src="./img/header/large/searchLarge.svg"
                   alt="Search"><span>Search</span></a></li>
@@ -36,8 +43,10 @@
         <section class="section-playlist">
           <h1>PLAYLISTS</h1>
           <ul>
-            <li><a href=""><img class="create-playlist" src="./img/header/large/createPlaylist.svg" alt=""><span>Create Playlist</span></a></li>
-            <li><a href=""><img class="liked-songs" src="./img/header/large/likedSongs.svg" alt=""><span>LikedSongs</span></a></li>
+            <li><a href=""><img class="create-playlist" src="./img/header/large/createPlaylist.svg" alt=""><span>Create
+                  Playlist</span></a></li>
+            <li><a href=""><img class="liked-songs" src="./img/header/large/likedSongs.svg"
+                  alt=""><span>LikedSongs</span></a></li>
           </ul>
         </section>
       </nav>
@@ -46,8 +55,8 @@
       <img src="./img/header/large/image.png" alt="">
     </div>
   </header>
-  
-  <main>
+
+  <main style="width: 100%; height: 100vh;" id="content">
 
   </main>
 </body>
