@@ -66,11 +66,16 @@ header .image {
     gap: 1.5rem;
   }
 
-  header .logo {
+  header .link-logo  {
     display: block;
     margin: 1.2rem 4.7rem 1.6rem 2rem;
-    min-width: 1.2rem;
-    min-width: 2.5rem;
+    max-width: 8.19rem;
+    max-height: 2.5rem;
+    margin: 1.19rem 4.69rem 0rem 1.5rem;
+  }
+
+  header .logo {
+    display: block;
   }
 
   header .section-links {

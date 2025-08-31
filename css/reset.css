@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GOTHAM-BOLD.TTF') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Reset copiado do site https://joshwcomeau.com/css/custom-css-reset/ */
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -81,6 +88,10 @@ section + section {
   section + section {
   margin-top: 5rem; /* Espaço apenas entre sections */
 }
+}
+
+ul li {
+  list-style: none;
 }
 
 
