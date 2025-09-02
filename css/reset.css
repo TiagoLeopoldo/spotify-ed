@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Circular Std';
-  src: url('../fonts/circular-std-medium-500.ttf') format('truetype');
+  font-family: "Circular Std";
+  src: url("../fonts/circular-std-medium-500.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -35,8 +35,8 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 0;
-  background: linear-gradient(to bottom, #484C4D, #121212, #121212);
-  font-family: 'Circular Std';
+  background: linear-gradient(to bottom, #484c4d, #121212, #121212);
+  font-family: "Circular Std";
 }
 /* 6. Improve media defaults */
 img,
@@ -79,9 +79,6 @@ section + section {
 
 @media (min-width: 1280px) {
   section + section {
-  margin-top: 5rem; /* Espaço apenas entre sections */
+    margin-top: 5rem; /* Espaço apenas entre sections */
+  }
 }
-}
-
-
-
